@@ -1,5 +1,6 @@
 import Header from "./components/Header";
 import { ThemeProvider } from "styled-components";
+import { GlobalStlyes } from "./components/styles/Global";
 
 const theme = {
   colors:{
@@ -13,6 +14,7 @@ const theme = {
 const App = () => {
   return (
     <ThemeProvider theme={theme}>
+      <GlobalStlyes/>
       <Header />
     </ThemeProvider>
   );
